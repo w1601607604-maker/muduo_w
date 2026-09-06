@@ -5,3 +5,6 @@ InetAddressTest
 TimestampTest
 lib/*.so
 *.o
+
+# SSH 密钥(勿提交)
+.git_ssh/
