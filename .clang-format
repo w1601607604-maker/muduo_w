@@ -1,0 +1,25 @@
+---
+# 基础风格，建议用 Google 或 LLVM
+BasedOnStyle: LLVM
+# 缩进宽度（通常是 4）
+IndentWidth: 4
+# 关键：大括号换行配置
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterObjCDeclaration: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+# 允许短的代码块留在同一行（如果你不想要，可以设为 None）
+AllowShortBlocksOnASingleLine: false

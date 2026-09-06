@@ -1,0 +1,18 @@
+# 1. 规定 CMake 的最低版本限制（防止老版本不兼容新语法）
+cmake_minimum_required(VERSION 3.0)
+
+# 2. 定义你的项目名称
+project(mymuduo)
+
+#mymuduo最终编译成动态库，设置动态库的路径，放在根目录下的lib文件夹下
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+
+#设置调试信息
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
+#定义参与编译的源代码文件
+aux_source_directory(. SRC_LIST)
+
+#编译生成动态库mymuduo
+add_library(mymuduo SHARED ${SRC_LIST})
+
